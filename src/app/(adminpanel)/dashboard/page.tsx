@@ -4,8 +4,9 @@ import { useRouter } from "next/navigation";
 import SidebarMenu from "../admincomponents/SidebarMenu";
 
 export default function Dashboard() {
-  const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const router = useRouter();
 
@@ -36,9 +37,8 @@ export default function Dashboard() {
 
         {/* Content Area */}
         <main
-          className={`ml-[270px] max-lg:ml-0 max-lg:w-full p-6 bg-[#070b18] min-h-screen w-full ${
-            sidebarOpen ? "max-lg:ml-[240px]" : "max-lg:ml-0"
-          }`}
+          className="ml-[270px] max-lg:ml-0 max-lg:w-full p-6 bg-[#070b18] min-h-screen w-full ${
+            max-lg:ml-[240px] max-lg:ml-0"
         >
           <h1 className="text-white text-3xl font-semibold">Welcome back, John</h1>
           <div className="grid grid-cols-3 gap-6 mt-6">

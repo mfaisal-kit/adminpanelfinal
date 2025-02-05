@@ -60,7 +60,7 @@ export default function EditProduct() {
           } else {
             setError('Product not found.');
           }
-        } catch (err) {
+        } catch (e) {
           setError('Error fetching product data');
         }
       };

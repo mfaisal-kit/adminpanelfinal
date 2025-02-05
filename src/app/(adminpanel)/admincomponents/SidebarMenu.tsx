@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function SidebarMenu() {
-  const [sidebarOpen, setSidebarOpen] = useState(false); // State for toggling sidebar
+
   const router = useRouter();
 
   // Toggle sidebar visibility for mobile screens
@@ -17,9 +17,7 @@ export default function SidebarMenu() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 h-screen bg-[#081028] transition-all duration-500 ease-in-out z-50 ${
-        sidebarOpen ? "w-64" : "w-0"
-      } lg:w-64`}
+      className="fixed top-0 left-0 h-screen bg-[#081028] transition-all duration-500 ease-in-out z-50 w-64 lg:w-64"
     >
       <div className="bg-[#081028] flex items-center gap-4 pt-6 pb-2 px-4 sticky top-0 min-h-[64px]">
         {/* Sidebar logo or header */}

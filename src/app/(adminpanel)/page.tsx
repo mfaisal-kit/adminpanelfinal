@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function Admin() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -107,9 +107,9 @@ export default function Admin() {
 
         {/* Content Area */}
         <main
-          className={`flex flex-col items-center justify-center ml-[270px] max-lg:ml-0 max-lg:w-full p-6 bg-[#070b18] min-h-screen w-full transition-all duration-300 ease-in-out ${
-            sidebarOpen ? "max-lg:ml-[240px]" : "max-lg:ml-0"
-          }`}
+          className="flex flex-col items-center justify-center ml-[270px] max-lg:ml-0 max-lg:w-full p-6 bg-[#070b18] min-h-screen w-full transition-all duration-300 ease-in-out ${
+            max-lg:ml-[240px]  max-lg:ml-0"
+          
         >
           <h1 className="text-white text-3xl font-semibold mb-8">
             Welcome Admin Panel, Faisal Furniture
