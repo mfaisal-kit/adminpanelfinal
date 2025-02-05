@@ -131,7 +131,7 @@ export default function Admin() {
           }`}
         >
           <h1 className="text-white text-3xl font-semibold mb-8">
-            Welcome Admin Panel, Faisal Furniture
+            Welcome Admin Panel, Ibrahim Restuarant
           </h1>
           <p className="text-white">Admin content goes here...</p>
         </main>
