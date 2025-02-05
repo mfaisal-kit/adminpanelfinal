@@ -1,5 +1,6 @@
 import { groq } from "next-sanity";
 import sanityClient from "./sanity.client";
+import { Slug } from "sanity";
 
 export async function GetMobileData() {
     return sanityClient.fetch(
@@ -79,7 +80,7 @@ export async function GetShopListData() {
 }
 
 //Product Details data
-export async function GetProductDetails(param:any) {
+export async function GetProductDetails(param:string) {
     console.log('GetProductDetails(param:any)=>',param);
     return sanityClient.fetch(
         groq`*[_type=="products" && slug=='${param}']  | order(_createdAt asc)

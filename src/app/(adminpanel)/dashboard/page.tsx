@@ -19,19 +19,6 @@ export default function Dashboard() {
     }
   }, [router]);
 
-  // Function to handle the toggle of the menu
-  const toggleMenu = (menuId: number) => {
-    if (activeMenu === menuId) {
-      setActiveMenu(null); // Close if the same menu is clicked again
-    } else {
-      setActiveMenu(menuId); // Open the clicked menu
-    }
-  };
-
-  // Toggle sidebar visibility for mobile
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
 
   if (!isAuthenticated) {
     return null; // Prevent rendering of the dashboard if not authenticated

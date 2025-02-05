@@ -60,9 +60,10 @@ export default function EditProduct() {
           } else {
             setError('Product not found.');
           }
-        } catch (err) {
-          setError('Error fetching product data');
+        }catch (err:any) {
+          setError(`Error fetching product data: ${err.message}`);
         }
+        
       };
 
       fetchProductData();
