@@ -45,9 +45,7 @@ export default function Admin() {
   };
 
   // Toggle sidebar visibility for mobile
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+
 
   if (!isAuthenticated) {
     return (
@@ -99,28 +97,11 @@ export default function Admin() {
       <div className="flex">
         {/* Sidebar */}
         <div
-          className={`${
-            sidebarOpen ? "w-60" : "w-0"
-          } bg-gray-800 text-white transition-all ease-in-out duration-300 min-h-screen overflow-hidden`}
+          className="w-60 bg-gray-800 text-white transition-all ease-in-out duration-300 min-h-screen overflow-hidden"
         >
           <div className="p-4">
-            <button onClick={toggleSidebar} className="text-white">
-              Close Sidebar
-            </button>
-            <ul className="mt-8 space-y-4">
-              <li>
-                <button className="text-white" onClick={() => toggleMenu(1)}>
-                  Menu 1
-                </button>
-                {activeMenu === 1 && <div className="ml-4">Submenu 1</div>}
-              </li>
-              <li>
-                <button className="text-white" onClick={() => toggleMenu(2)}>
-                  Menu 2
-                </button>
-                {activeMenu === 2 && <div className="ml-4">Submenu 2</div>}
-              </li>
-            </ul>
+           
+            
           </div>
         </div>
 

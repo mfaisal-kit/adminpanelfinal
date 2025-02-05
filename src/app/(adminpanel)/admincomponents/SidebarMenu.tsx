@@ -7,9 +7,7 @@ export default function SidebarMenu() {
   const router = useRouter();
 
   // Toggle sidebar visibility for mobile screens
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+
 
   // Handle Logout functionality
   const handleLogout = () => {
@@ -35,18 +33,7 @@ export default function SidebarMenu() {
         </a>
 
         {/* Mobile toggle button */}
-        <button
-          onClick={toggleSidebar}
-          className="lg:hidden ml-auto p-2 text-gray-300 focus:outline-none"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 fill-gray-300" viewBox="0 0 20 20">
-            <path
-              fillRule="evenodd"
-              d="M.13 17.05a1.41 1.41 0 0 1 1.41-1.41H10a1.41 1.41 0 1 1 0 2.82H1.54a1.41 1.41 0 0 1-1.41-1.41zm0-14.1a1.41 1.41 0 0 1 1.41-1.41h16.92a1.41 1.41 0 1 1 0 2.82H1.54A1.41 1.41 0 0 1 .13 2.95zm0 7.05a1.41 1.41 0 0 1 1.41-1.41h16.92a1.41 1.41 0 1 1 0 2.82H1.54A1.41 1.41 0 0 1 .13 10z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
+        
       </div>
 
       {/* Sidebar links */}
