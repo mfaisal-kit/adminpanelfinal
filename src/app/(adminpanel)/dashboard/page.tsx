@@ -34,21 +34,10 @@ export default function Dashboard() {
               max-lg:ml-[240px] max-lg:ml-0"
           
         >
-          <h1 className="text-white text-3xl font-semibold">Welcome back, John</h1>
+         
           <div className="grid grid-cols-3 gap-6 mt-6">
-            <div className="bg-[#0a1729] p-4 rounded-md">
-              <h3 className="text-gray-400 text-sm">Used</h3>
-              <p className="text-2xl text-white font-bold">25 GB</p>
-              <p className="text-sm text-gray-400">of 50 GB</p>
-            </div>
-            <div className="bg-[#0a1729] p-4 rounded-md">
-              <h3 className="text-gray-400 text-sm">Storage</h3>
-              <p className="text-2xl text-white font-bold">2.5 TB</p>
-            </div>
-            <div className="bg-[#0a1729] p-4 rounded-md">
-              <h3 className="text-gray-400 text-sm">Storage</h3>
-              <p className="text-2xl text-white font-bold">500 GB</p>
-            </div>
+            
+
           </div>
         </main>
       </div>
