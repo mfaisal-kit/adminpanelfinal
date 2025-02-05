@@ -1,6 +1,6 @@
 import { groq } from "next-sanity";
 import sanityClient from "./sanity.client";
-import { Slug } from "sanity";
+
 
 export async function GetMobileData() {
     return sanityClient.fetch(
